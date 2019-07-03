@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/logo_beconsulting"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_sicosvac"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/text_bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartilla de vacunación"
+        android:layout_below="@id/logo_beconsulting"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="32sp"
+        android:fontFamily="@font/abrilfatface_regular"
+        />
+
+    <TextView
+        android:id="@+id/text_desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a la cartilla"
+        android:layout_below="@id/text_bienvenido"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text_desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="de vacunación electrónica"
+        android:layout_below="@id/text_desc1"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_regular"
+
+
+        />
+
+</RelativeLayout>

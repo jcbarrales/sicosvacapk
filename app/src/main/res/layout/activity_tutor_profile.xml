@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/me_eventsprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/taskBarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/color_mehome_background"
+        android:layout_height="70dp"
+        >
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="SiCosVac"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#FFFFFFFF"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:maxLines="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:onClick="logout"
+            android:textColor="#FFFFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+
+            />
+
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="88dp"
+            android:src="@drawable/logo_sicosvac"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ico_salir"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:onClick="logouteventsprofile"
+            android:clickable="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_below="@+id/taskBarLayout"
+        android:id="@+id/header"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/perfil_tutor"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                >
+                <TextView
+                    android:id="@+id/nameTexteventsprofile"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_semibold"
+
+                    />
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/mePictureeventsprofile"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:src="@drawable/male"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_color="@android:color/white"
+                    app:civ_border_width="3dp"
+                    android:background="@android:color/transparent"
+                    android:rotation="-11"
+
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/im_toma_foto_perfil"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ico_camera"
+                    android:clickable="true"
+                    android:onClick="tomafotoperfil"
+                    android:layout_toRightOf="@+id/mePictureeventsprofile"
+                    android:layout_below="@+id/mePictureeventsprofile"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginLeft="-25dp"
+
+
+                    />-->
+
+                <TextView
+                    android:id="@+id/tvuserPerfil"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:onClick="logout"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_below="@id/nameTexteventsprofile"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/color_mehome_background"
+        android:elevation="5dp"
+        android:layout_below="@+id/header"
+        >
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+
+        android:id="@+id/Maintabs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/header"
+        android:background="@null"
+        android:layout_marginTop="-31dp"
+        android:elevation="40dp"
+
+
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerinitial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Maintabs"
+        android:layout_marginTop="10dp"
+
+
+
+        />
+
+</RelativeLayout>

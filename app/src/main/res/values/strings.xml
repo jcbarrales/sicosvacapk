@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SicosVac</string>
+    <string name="title_activity_splah">SplahActivity</string>
+
+
+    <string name="login_header">Iniciar sesión</string>
+    <string name="login_btnlogin">Iniciar sesión</string>
+    <string name="login_forgotpassword">"¿Olvidaste tu contraseña?"</string>
+    <string name="enter_username">Por favor, ingrese su usuario</string>
+    <string name="enter_password">Por favor, ingrese su contraseña</string>
+
+
+</resources>

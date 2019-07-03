@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorbackgroundapp">#B65C5E</color>
+    <color name="colorbackgroundbtn">#903532</color>
+
+
+    <color name="color_green">#73c253</color>
+    <color name="color_blue">#38609b</color>
+    <color name="color_gray">#aaaaaa</color>
+    <color name="color_graydark">#979797</color>
+
+    <color name="color_btnlogin_background">#e74955</color>
+    <color name="color_text_hint">#b3ffffff</color>
+    <color name="color_mehome_background">#cfc334</color>
+
+    <color name="color_vercurso_background">#e74955</color>
+
+    <color name="color_cursocondiciones_background">#f2f2f2</color>
+
+
+
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_border">#1b9fcb</color>
+
+
+
+
+
+    <color name="switchTrack">#ffd600</color>
+    <color name="switchTrackDisable">#90caf9</color>
+    <color name="switchTrackActive">#1565c0</color>
+    <color name="switchTrackNormal">#90caf9</color>
+    <color name="switchThumbBgActive">#bae2ef</color>
+    <color name="switchThumbActive">#ad1457</color>
+    <color name="switchThumbkNormal">#64b5f6</color>
+
+    <color name="track_active">#bae2ef</color>
+    <color name="track_inactive">#e8e8e8</color>
+
+    <color name="color_white">#ffffff</color>
+
+
+</resources>
