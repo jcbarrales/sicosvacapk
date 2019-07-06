@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="75">
+
+            <TextView
+                android:id="@+id/tipoVacuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Estado de la vacuna"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:lineSpacingMultiplier=".8"
+
+                />
+
+            <TextView
+                android:id="@+id/textoVacuna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="La vacuna del menor...."
+                android:textColor="#99999999"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="-3dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

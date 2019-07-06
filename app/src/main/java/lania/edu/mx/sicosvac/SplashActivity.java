@@ -7,13 +7,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import lania.edu.mx.sicosvac.db.APIService;
 import lania.edu.mx.sicosvac.db.pojo.User;
+import lania.edu.mx.sicosvac.general.AESUtils;
+import lania.edu.mx.sicosvac.general.RetrofitClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -70,27 +70,38 @@ public class SplashActivity extends Activity {
         }
     }
 
-    // Login remotely using username and password
+    // Método para validar el login del tutor.
     public static void signIn(final String username, final String password, final Activity context){
-        Log.d("signIn", "Entro");
-        APIService apiService =  RetrofitClient.getApiService(username + ":" + password); // call using same credentials for header.
-        Log.d("Login", "Credentials= " + username + ":" + password);
 
-        Call<User> loginCall = apiService.login(username,password);
-        Log.d("signIn", "Paso AppService");
+        APIService apiService =  RetrofitClient.getApiService(); // call using same credentials for header.
 
+
+        //Vamos a encriptar la contraseña que escribió el usuario en formato MDF
+        String encrypted = "";
+        try {
+            encrypted = AESUtils.encrypt(password);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        Call<User> loginCall = apiService.login(username,encrypted);
         loginCall.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
-                Log.d("signIn", String.valueOf(response.code()));
+                 Log.d("signIn", String.valueOf(response.code()));
                 if(response.code() == 200){
-                    //SharedPreferences sharedPref = context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE);
-                    Log.d("signIn", "Va a crear intent");
                     Intent intent = new Intent(context, tutor_profile.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
-                    //User user = response.body();
-                    Log.d("signIn", "Va a iniciar intent");
+                    //Obtenemos los valores del servicio y los guardamos en el objeto User
+                    User user = response.body();
+
+                    intent.putExtra("nombre",user.getNombre() + " " + user.getApellidos());
+                    intent.putExtra("usuario",user.getUsuario() );
+                    intent.putExtra("tutor_id",user.getId_tutor() );
+
+
                     context.startActivity(intent);
                     context.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                     context.finish();
@@ -102,7 +113,7 @@ public class SplashActivity extends Activity {
             @Override
             public void onFailure(Call<User> call, Throwable t) {
                 Log.e("Login", "Failure on Login: " + t.getMessage());
-                showSimpleAlertDialog(  "Verifica tu conexión y vuelve a iintentarlo", context);
+                showSimpleAlertDialog(  "Verifica tu conexión y vuelve a intentarlo", context);
             }
         });
 
@@ -146,4 +157,10 @@ public class SplashActivity extends Activity {
         alertDialogDelete.show();
     }
 
+    public static void logout(Activity context){
+
+        context.startActivity(new Intent(context, LoginActivity.class));
+        context.finish();
     }
+
+}

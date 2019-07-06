@@ -68,8 +68,9 @@
         android:layout_marginRight="30dp"
         android:gravity="center"
         android:fontFamily="@font/poppins_regular"
-
-
         />
+
+
+
 
 </RelativeLayout>
