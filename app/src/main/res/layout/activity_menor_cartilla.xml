@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/me_eventsprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/taskBarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/color_mehome_background"
+        android:layout_height="70dp"
+        >
+
+
+        <ImageView
+            android:layout_width="340dp"
+            android:layout_height="88dp"
+            android:src="@drawable/logo_sicosvac"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_below="@+id/taskBarLayout"
+        android:id="@+id/header"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/perfil_tutor"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                >
+                <TextView
+                    android:id="@+id/nameTextmenorprofile"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_semibold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtInfoMenor"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:onClick="logout"
+                    android:textColor="#FFFFFFFF"
+                    android:layout_below="@id/nameTextmenorprofile"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/color_mehome_background"
+        android:elevation="5dp"
+        android:layout_below="@+id/header"
+        >
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+
+        android:id="@+id/Maintabs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/header"
+        android:background="@null"
+        android:layout_marginTop="-31dp"
+        android:elevation="40dp"
+
+
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerinitial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Maintabs"
+        android:layout_marginTop="10dp"
+
+
+
+        />
+
+</RelativeLayout>

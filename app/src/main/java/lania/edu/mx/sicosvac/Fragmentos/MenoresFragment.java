@@ -2,8 +2,8 @@ package lania.edu.mx.sicosvac.Fragmentos;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,20 +11,20 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
 
 import lania.edu.mx.sicosvac.R;
 import lania.edu.mx.sicosvac.SplashActivity;
 import lania.edu.mx.sicosvac.db.APIService;
 import lania.edu.mx.sicosvac.db.pojo.Menor;
-import lania.edu.mx.sicosvac.general.RetrofitClient;
+import lania.edu.mx.sicosvac.General.RetrofitClient;
+import lania.edu.mx.sicosvac.menor_cartilla;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
+// Julio César Barrales Flores
+// MRySI - 2017-2019
 
 public class MenoresFragment extends Fragment {
     private static Context context = null;
@@ -47,11 +47,12 @@ public class MenoresFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
+        //Vamos a dibujar el fragmento de menores
         View view = inflater.inflate(R.layout.fragment_menores,container,false);
         context = getContext();
 
+        //Tomamos el recurso con el que vamos a representar a los menores del tutor el cual está definido en la
         final LinearLayout menoresContainer = view.findViewById(R.id.container_fragment_menores);
         menoresContainer.removeAllViews();
 
@@ -71,11 +72,33 @@ public class MenoresFragment extends Fragment {
                         ((TextView) rowView.findViewById(R.id.menorCURP)).setText(m.getCurp());
                         ((TextView) rowView.findViewById(R.id.dateText)).setText(m.getFecha_nac());
 
+
+                        rowView.setOnClickListener( new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                //Intent intent = new Intent(EventsActivity.this, CoursesActivity.class);
+
+                                // prueba nueva imagen
+                                Intent intent = new Intent(context, menor_cartilla.class);
+
+
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                                intent.putExtra("menormombre",m.getNombre() + " " + m.getApellidos());
+                                intent.putExtra("fecha_nac",m.getFecha_nac());
+                                intent.putExtra("id_menor",m.getId_menor());
+
+
+                                startActivity(intent);
+                                getActivity().overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
+
+                            }
+                        } );
+
+
+
                         menoresContainer.addView(rowView);
                     }
-
-
-
                 } else if (response.code() == 401) { // somehow credentials are not valid any more. For example, pwd or username are changed manually in the database. Should never happen
                     SplashActivity.logout(getActivity());
                 }

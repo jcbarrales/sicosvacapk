@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import lania.edu.mx.sicosvac.Fragmentos.MenoresFragment;
 import lania.edu.mx.sicosvac.Fragmentos.NotificacionesFragment;
-import lania.edu.mx.sicosvac.general.PageAdapterTutoresProfile;
+import lania.edu.mx.sicosvac.General.PageAdapterTutoresProfile;
 
 public class tutor_profile extends AppCompatActivity {
     private int tutor_id;
@@ -41,19 +41,17 @@ public class tutor_profile extends AppCompatActivity {
         ((TextView) findViewById(R.id.txtUserPerfil)).setText(usuario);
 
 
-        Fragment[] fragments = {
-                Fragment.instantiate(this,MenoresFragment.class.getName()),
-                Fragment.instantiate(this,NotificacionesFragment.class.getName())
-        };
-
-
         tabLayout = (TabLayout)findViewById(R.id.Maintabs);
         viewPager = (ViewPager)findViewById(R.id.viewpagerinitial);
+
         viewPager.setOffscreenPageLimit(2);
         viewPager.setAdapter(setupViewPager());
+
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#FFFFFF") );
+
         wrapTabIndicatorToTitle(tabLayout, 80, 80);
+
         setupTabIconsBar();
         tabLayout.getTabAt(1).select();
         tabLayout.getTabAt(0).select();
@@ -81,44 +79,21 @@ public class tutor_profile extends AppCompatActivity {
 
     }
 
-
-
     private void setupTabIconsBar() { //Adding custom view to tab
 
-        // String carpetaFuente = "font/poppins_regular.ttf";
-        // String carpetaFuenteunselected = "font/poppins_semibold.ttf";
-
-        // Typeface fuentetab = Typeface.createFromAsset(getAssets(), carpetaFuente);
-        // Typeface fuentetabunselected = Typeface.createFromAsset(getAssets(), carpetaFuenteunselected);
-
         TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        // tabOne.setTypeface(fuentetab);
         tabOne.setText("MENORES");
         tabOne.setTextColor(Color.WHITE);
 
-        //Drawable tab_selector = ContextCompat.getDrawable(this, R.drawable.ic_saved_gray);
-        //tab_selector.setBounds(0, 0, widthsaved, width);
-
-        //tabOne.setCompoundDrawables(null, tab_selector, null, null);
-        //tabOne.setCompoundDrawablePadding(9);
         tabLayout.getTabAt(0).setCustomView(tabOne);
 
-
         TextView tabTwo = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
-        //tabTwo.setTypeface(fuentetabunselected);
         tabTwo.setText("NOTIFICACIONES");
         tabTwo.setTextColor(Color.WHITE);
 
-        //Drawable tab_selector = ContextCompat.getDrawable(this, R.drawable.ic_saved_gray);
-        //tab_selector.setBounds(0, 0, widthsaved, width);
-
-        //tabOne.setCompoundDrawables(null, tab_selector, null, null);
-        //tabTwo.setCompoundDrawablePadding(9);
         tabLayout.getTabAt(1).setCustomView(tabTwo);
 
     }
-
-
 
     private void settingMargin(ViewGroup.MarginLayoutParams layoutParams, int start, int end) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
@@ -132,18 +107,11 @@ public class tutor_profile extends AppCompatActivity {
         }
     }
 
-
-
     public void logouteventsprofile(View view){
-        SharedPreferences sharedPref = getSharedPreferences( (getPackageName()), Context.MODE_PRIVATE );
-        String userAuth = sharedPref.getString( "signed_user", null );
-
 
         SplashActivity.logout(tutor_profile.this);
 
     }
-
-
 
     public void wrapTabIndicatorToTitle(TabLayout tabLayout, int externalMargin, int internalMargin) {
         View tabStrip = tabLayout.getChildAt(0);

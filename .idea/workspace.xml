@@ -13,18 +13,18 @@
     <bookmark url="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f7ac8e-33a0-4aa9-848e-9b9e79426fba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_logging_interceptor_3_6_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/NotificacionesFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/notificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/AESUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/PageAdapterTutoresProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_menores.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notificaciones.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/menor_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/notificacion_item.xml" afterDir="false" />
+    <list default="true" id="58f7ac8e-33a0-4aa9-848e-9b9e79426fba" name="Default Changelist" comment="Actalización a la pantalla de perfil de tutor">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/cartilla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/menor_cartilla.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menor_cartilla.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_tab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cartilla.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -36,55 +36,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/RetrofitClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/NotificacionesFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/NotificacionesFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/JsonPlaceHolderApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Post.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/AESUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/AESUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/PageAdapterTutoresProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/PageAdapterTutoresProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/RetrofitClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,44 +83,46 @@
     <session id="-924376811">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="8" />
-          <entry key="gradle" value="3" />
-          <entry key="java" value="60" />
-          <entry key="xml" value="27" />
+          <entry key="gradle" value="4" />
+          <entry key="java" value="73" />
+          <entry key="xml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="8" />
-          <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="60" />
-          <entry key="XML" value="27" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="73" />
+          <entry key="XML" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="gradle" value="28" />
-          <entry key="java" value="3434" />
-          <entry key="xml" value="292" />
+          <entry key="gradle" value="35" />
+          <entry key="java" value="3989" />
+          <entry key="txt" value="52" />
+          <entry key="xml" value="324" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="28" />
-          <entry key="JAVA" value="3434" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="292" />
+          <entry key="Groovy" value="35" />
+          <entry key="JAVA" value="3989" />
+          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="XML" value="324" />
         </counts>
       </usages-collector>
     </session>
@@ -163,123 +130,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menor_cartilla.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#settingMargin#0;class#tutor_profile#0" />
-                <element signature="method#logouteventsprofile#0;class#tutor_profile#0" />
-                <element signature="method#wrapTabIndicatorToTitle#0;class#tutor_profile#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/NotificacionesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="216" selection-start-line="216" selection-end-line="216" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="88" column="6" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/notificacion_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="308">
+              <caret line="64" column="49" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="49" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/menor_cartilla.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menor.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cartilla.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/cartilla.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="9" />
+            <state relative-caret-position="136">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="19" />
               <folding>
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#987#988#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1385#1386#0" expanded="true" />
-                <element signature="e#1425#1426#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -298,6 +184,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>client</find>
+      <find>public static void showSimpleAlertDialog(String message, Context context){</find>
+      <find>showSimpleAlertDialog</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2586,7 +2474,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/DigestUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/AESUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/RetrofitClient.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/RetrofitClient.java" />
@@ -2597,17 +2484,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/PageAdapterTutoresProfile.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_menores.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_notificaciones.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menores.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/MEnor.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menor.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/menor_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/notificacion.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/notificacion_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/NotificacionesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/RetrofitClient.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menor_cartilla.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/menor_cartilla.java" />
       </list>
     </option>
   </component>
@@ -2622,6 +2513,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2645,21 +2537,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="sicosvac" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sicosvacapk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="sicosvac" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sicosvacapk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="sicosvac" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Fragmentos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2671,24 +2548,13 @@
               <item name="sicosvacapk" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="sicosvacapk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="sicosvacapk" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+              <item name="anim" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -2696,6 +2562,14 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="4756433041563098" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="lania.edu.mx.sicosvac" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Proyectos\android\sicosvacapk\app\src\main\res" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2781,6 +2655,14 @@
       <option name="presentableId" value="Default" />
       <updated>1562122074989</updated>
     </task>
+    <task id="LOCAL-00001" summary="Actalización a la pantalla de perfil de tutor">
+      <created>1562400801194</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562400801194</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2793,11 +2675,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16364606" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1633888" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -2808,10 +2690,10 @@
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="5" weight="0.18221258" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.49016392" />
       <window_info anchor="bottom" id="Android Profiler" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4978308" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.329718" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -2819,21 +2701,22 @@
       <window_info anchor="right" id="Gradle" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" weight="0.32889125" />
+      <window_info anchor="right" id="Preview" order="5" weight="0.23134328" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Actalización a la pantalla de perfil de tutor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actalización a la pantalla de perfil de tutor" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/DigestUtils.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/AESUtils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/AESUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2849,34 +2732,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/JsonPlaceHolderApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Post.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Post.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/MainActivity.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.4.0/451207353948708405a08287e2a315c3f23553fe/retrofit-2.4.0-sources.jar!/retrofit2/Retrofit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -2906,12 +2763,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b6a2140439b80ce1c3e093fa814dcbe6/jars/classes.jar!/android/support/v7/app/AppCompatViewInflater.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -2928,27 +2785,10 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.4.0/451207353948708405a08287e2a315c3f23553fe/retrofit-2.4.0-sources.jar!/retrofit2/ExecutorCallAdapterFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/RetrofitClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2964,31 +2804,7 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="139" column="50" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/MenoresFragment.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/PageAdapterTutoresProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/general/MenoresFragment.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -2996,66 +2812,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_notificaciones.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_menores.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menores.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/pojo/Menor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="9" />
-          <folding>
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3063,61 +2824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1438#1439#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2057#2058#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2196#2197#0" expanded="true" />
-            <element signature="e#2228#2229#0" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
-            <element signature="e#2344#2345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menor_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="103" column="19" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="103" selection-end-column="19" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3127,37 +2833,6 @@
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#settingMargin#0;class#tutor_profile#0" />
-            <element signature="method#logouteventsprofile#0;class#tutor_profile#0" />
-            <element signature="method#wrapTabIndicatorToTitle#0;class#tutor_profile#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="88" column="6" selection-start-line="88" selection-start-column="6" selection-end-line="88" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/notificacion_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3173,15 +2848,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/RetrofitClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/JsonPlaceHolderApi.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="127" column="20" lean-forward="true" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/NotificacionesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+        <state relative-caret-position="986">
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_notificaciones.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/db/APIService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/General/PageAdapterTutoresProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_menores.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="195" column="17" lean-forward="true" selection-start-line="2" selection-end-line="195" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/MenoresFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="88" column="76" selection-start-line="88" selection-start-column="76" selection-end-line="88" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/tutor_profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setupViewPager#0;class#tutor_profile#0" />
+            <element signature="method#setupTabIconsBar#0;class#tutor_profile#0" />
+            <element signature="method#settingMargin#0;class#tutor_profile#0" />
+            <element signature="method#logouteventsprofile#0;class#tutor_profile#0" />
+            <element signature="method#wrapTabIndicatorToTitle#0;class#tutor_profile#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menor_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/notificacion_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menor_cartilla.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="64" column="49" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/menor_cartilla.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cartilla.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/lania/edu/mx/sicosvac/Fragmentos/cartilla.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

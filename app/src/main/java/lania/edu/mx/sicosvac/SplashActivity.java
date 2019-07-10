@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
@@ -12,8 +11,8 @@ import android.util.Log;
 
 import lania.edu.mx.sicosvac.db.APIService;
 import lania.edu.mx.sicosvac.db.pojo.User;
-import lania.edu.mx.sicosvac.general.AESUtils;
-import lania.edu.mx.sicosvac.general.RetrofitClient;
+import lania.edu.mx.sicosvac.General.AESUtils;
+import lania.edu.mx.sicosvac.General.RetrofitClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -76,7 +75,7 @@ public class SplashActivity extends Activity {
         APIService apiService =  RetrofitClient.getApiService(); // call using same credentials for header.
 
 
-        //Vamos a encriptar la contraseña que escribió el usuario en formato MDF
+        //Vamos a encriptar la contraseña que escribió el usuario en formato MDF5
         String encrypted = "";
         try {
             encrypted = AESUtils.encrypt(password);
@@ -91,11 +90,14 @@ public class SplashActivity extends Activity {
             public void onResponse(Call<User> call, Response<User> response) {
                  Log.d("signIn", String.valueOf(response.code()));
                 if(response.code() == 200){
-                    Intent intent = new Intent(context, tutor_profile.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                     //Obtenemos los valores del servicio y los guardamos en el objeto User
                     User user = response.body();
+
+
+                    //Preparamos la información para activar la pantalla de tutor_profile
+                    Intent intent = new Intent(context, tutor_profile.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                     intent.putExtra("nombre",user.getNombre() + " " + user.getApellidos());
                     intent.putExtra("usuario",user.getUsuario() );
@@ -133,29 +135,6 @@ public class SplashActivity extends Activity {
         alertDialogDelete.show();
     }
 
-    public static void showSimpleAlertDialogTitle(String message, String title, Context context){
-        final AlertDialog.Builder alertDialogDelete = new AlertDialog.Builder(context);
-        alertDialogDelete.setTitle(title);
-        alertDialogDelete.setCancelable(false);
-        alertDialogDelete.create();
-        alertDialogDelete.setMessage(message);
-        alertDialogDelete.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {}
-        });
-        alertDialogDelete.show();
-    }
-
-    public static void showSimpleAlertDialognoTitle(String message, Context context){
-        final AlertDialog.Builder alertDialogDelete = new AlertDialog.Builder(context);
-        //alertDialogDelete.setTitle("Login");
-        alertDialogDelete.setCancelable(false);
-        alertDialogDelete.create();
-        alertDialogDelete.setMessage(message);
-        alertDialogDelete.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {}
-        });
-        alertDialogDelete.show();
-    }
 
     public static void logout(Activity context){
 
